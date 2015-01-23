@@ -11,8 +11,10 @@ public class LCMCalculatorAlt {
         System.out.print("Enter your second number: ");
         num2 = numScan.nextInt(); //Assigns second number to num2 entered by user
         
+        //Java ternary operator, is similar to if...else statements. [(condition) ? if true : if false]
         max = (num1 > num2) ? num1 : num2;
         min = (num1 > num2) ? num2 : num1;
+        
         for (int i = 1; i <= min ; i++){
             lcm = max * i;
             if (lcm % min == 0){
