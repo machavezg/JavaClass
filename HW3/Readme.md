@@ -1,5 +1,5 @@
 Instructions
-1. Read Chapter 3 - Java - ( section 3.8 is optional and will not be on any exams, you may use GUI in your programs if you like again it is optional).
+<p>1. Read Chapter 3 - Java - ( section 3.8 is optional and will not be on any exams, you may use GUI in your programs if you like again it is optional).
 
 2. Self-Review exercises - check your answers
 
