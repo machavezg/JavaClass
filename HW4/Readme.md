@@ -1,4 +1,4 @@
-(Enforcing Privacy with Cryptography) The explosive growth of Internet communications
+4.38 (Enforcing Privacy with Cryptography) The explosive growth of Internet communications
 and data storage on Internet-connected computers has greatly increased privacy concerns. The field
 of cryptography is concerned with coding data to make it difficult (and hopefully—with the most
 advanced schemes—impossible) for unauthorized users to read. In this exercise you’ll investigate a
