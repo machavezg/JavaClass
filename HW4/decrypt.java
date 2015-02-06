@@ -11,7 +11,7 @@ public class decrypt
         Scanner num = new Scanner(System.in);
         int number, num1, num2, num3, num4;
 //Get Input
-        System.out.print("What do you want to decrypt? ");
+        System.out.print("Enter a 4-digit number would you like to encrypt: ");
         number = num.nextInt(); 
 // get the digits
         int digit1 = number / 1000; //number / 10000;
@@ -25,7 +25,7 @@ public class decrypt
         num3 = (digit1 + 3) % 10;
         num4 = (digit2 + 3) % 10;
 //output the decrypted data
-        System.out.printf("Your number:" + digit1 + digit2 + digit3 + digit4 + "\n");
+        System.out.printf("Your number:" + digit1 + digit2 + digit3 + digit4 + "\n"); //This is only needed to verify.
         System.out.printf("Your decrypted number:" + num1 + num2 + num3 + num4 + "\n");      
     } 
 } // end class decrypt
