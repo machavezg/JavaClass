@@ -2,15 +2,12 @@
 // Program decrypt data from transmission
 import java.util.Scanner;
 
-
 public class decrypt
 { 
     public static void main(String[] args)
     {
 //Declare variables
         Scanner num = new Scanner(System.in);          
-        StringBuilder sb = new StringBuilder();
-
         int num1, num2, num3, num4, length, number;
         String value;
 //Get Input and check user input
