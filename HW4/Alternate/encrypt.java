@@ -11,7 +11,7 @@ public class encrypt
         int num1, num2, num3, num4, length, number;
         String value;
 //Get Input and check user input
-        System.out.print("Enter a 4-digit number would you like to encrypt? ");
+        System.out.print("Enter a 4-digit number you would like to encrypt? ");
 //Checks to see if its a word
         while (!num.hasNextInt()){
             System.out.println("Thats not a number");
