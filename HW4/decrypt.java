@@ -11,7 +11,7 @@ public class decrypt
         Scanner num = new Scanner(System.in);
         int number, num1, num2, num3, num4;
 //Get Input
-        System.out.print("Enter a 4-digit number would you like to encrypt: ");
+        System.out.print("Enter a 4-digit number you would like to encrypt: ");
         number = num.nextInt(); 
 // get the digits
         int digit1 = number / 1000; //number / 10000;
