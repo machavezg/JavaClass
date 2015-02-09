@@ -13,10 +13,10 @@ public class encrypt
         System.out.print("Enter a 4-digit number you would like to encrypt: ");
         number = num.nextInt();
 // get the digits
-        int digit1 = number / 1000;
-        int digit2 = number % 1000 / 100;
-        int digit3 = number % 100 / 10;//number % 10000 % 1000 % 100 / 10;
-        int digit4 = number % 10; //% 10000 % 1000 % 100 % 10;
+        int digit1 = number / 1000;//any int divided by 1000 will be a single number due to accuracy loss using int.
+        int digit2 = number % 1000 / 100;//any int in the thousands will have a remainder in the hundreds when using % 1000.
+        int digit3 = number % 100 / 10;//Same rule from above applies to the idea behind this, you obtain a digit in the hundreths place.
+        int digit4 = number % 10;//Modulos 10 for obtaining a digit in the tenths place.
 //encrypt the data
 //Swap 1 with 3 and 2 with 4
         num1 = (digit3 + 7) % 10;
