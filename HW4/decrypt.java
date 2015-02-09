@@ -25,7 +25,7 @@ public class decrypt
         num3 = (digit1 + 3) % 10;
         num4 = (digit2 + 3) % 10;
 //output the decrypted data
-        System.out.printf("Your number:" + digit1 + digit2 + digit3 + digit4 + "\n"); //This is only needed to verify.
-        System.out.printf("Your decrypted number:" + num1 + num2 + num3 + num4 + "\n");      
+        System.out.printf("Your number: " + digit1 + digit2 + digit3 + digit4 + "\n"); //This is only needed to verify.
+        System.out.printf("Your decrypted number: " + num1 + num2 + num3 + num4 + "\n");      
     } 
 } // end class decrypt
