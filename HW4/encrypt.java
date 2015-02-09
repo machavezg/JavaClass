@@ -24,7 +24,7 @@ public class encrypt
         num3 = (digit1 + 7) % 10;
         num4 = (digit2 + 7) % 10;
 //output the encrypted data
-        System.out.printf("Your number:" + digit1 + digit2 + digit3 + digit4 + "\n"); //this is only needed to verify
-        System.out.printf("Your encrypted number:" + num1 + num2 + num3 + num4 + "\n");
+        System.out.printf("Your number: " + digit1 + digit2 + digit3 + digit4 + "\n"); //this is only needed to verify
+        System.out.printf("Your encrypted number: " + num1 + num2 + num3 + num4 + "\n");
    } 
 } // end class Encrypt
