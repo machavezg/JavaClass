@@ -7,8 +7,8 @@ public class Craps
 {
    // create random number generator for use in method rollDice
     private static final Random randomNumbers = new Random();
-    int balance;
-    int wager;
+    static int balance ;
+    static int wager;
 
    // enumeration with constants that represent the game status
     private enum Status { CONTINUE, WON, LOST };
@@ -19,14 +19,10 @@ public class Craps
     private static final int SEVEN = 7;
     private static final int YO_LEVEN = 11;
     private static final int BOX_CARS = 12;
-    
-    public static void main(String args[])
-    {
-        Craps application = new Craps();
-        application.bet();
-    }
+
+  
    // allows the user to bet on games of Craps
-    public void bet()
+    public static void main(String[] args)
     {
       Scanner myWager = new Scanner(System.in);
       // start the user off with $1000
@@ -57,13 +53,12 @@ public class Craps
       // terminate if the user quits or runs out of money
     }
    // plays one game of craps
-    public void play()
+    public static void play()
     {
         int myPoint = 0; // point if no win or loss on first roll
-        int sumOfDice = 0;
         Status gameStatus; // can contain CONTINUE, WON or LOST
 
-        sumOfDice = rollDice(); // first roll of the dice
+        int sumOfDice = rollDice(); // first roll of the dice
 
       // determine game status and point based on first roll 
         switch (sumOfDice)
@@ -110,7 +105,7 @@ public class Craps
         } 
     } 
 // roll dice, calculate sum and display results
-    public int rollDice()
+    public static int rollDice()
     {
         // pick random die values
         int die1 = 1 + randomNumbers.nextInt(6); // first die roll
@@ -126,10 +121,9 @@ public class Craps
     } 
 
     // randomly chooses a phrase to respond to the player's action
-    public String chatter()
+    public static String chatter()
     {
-        switch ( randomNumbers.nextInt(5) )
-        {
+        switch ( randomNumbers.nextInt(5) ){
             case 0:
                 return "Oh, you're going for broke huh?";
             case 1:
