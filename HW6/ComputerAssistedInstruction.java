@@ -10,9 +10,12 @@ public class ComputerAssistedInstruction
    public void createQuestion()
    {
       // get two random numbers between 0 and 9
+      int digit1 = randomNumbers.nextInt(10);
+      int digit2 = randomNumbers.nextInt(10);
       // get random number between 0 and 3 to get arithmatic operator (-,+,*,/)
-      
+      int operator = randomNumbers.nextInt(4);
       //use switch statement to create question and compute answer
+      
       //ouput question to the user
 
     } // end method createQuestion
