@@ -4,7 +4,7 @@ import java.util.Random;
 public class GameOfCraps
 {
 // create random number generator for use in method RollDice
-    private Random randomNumbers = new Random();
+    private final Random randomNumbers = new Random();
 // enumeration with constants that represent the game status
     private enum Status { CONTINUE, WON, LOST };
 
@@ -12,6 +12,11 @@ public class GameOfCraps
     int[] losses; // number of losses, by rolls
     int winSum = 0; // total number of wins
     int loseSum = 0; // total number of losses
+    private static final int SNAKE_EYES = 2;
+    private static final int TREY = 3;
+    private static final int SEVEN = 7;
+    private static final int YO_LEVEN = 11;
+    private static final int BOX_CARS = 12;
     
     public static void main (String[] args){
         GameOfCraps game = new GameOfCraps();
@@ -34,21 +39,21 @@ public class GameOfCraps
             sumOfDice = RollDice(); // first roll of the dice
             roll = 1;
 // determine game status and point based on sumOfDice
-            switch ( sumOfDice )
+            switch (sumOfDice)
             {
-                case 7: // win with 7 on first roll
-                case 11: // win with 11 on first roll
+                case SEVEN: // win with 7 on first roll
+                case YO_LEVEN: // win with 11 on first roll           
                     gameStatus = Status.WON;
                     break;
-                case 2: // lose with 2 on first roll
-                case 3: // lose with 3 on first roll
-                case 12: // lose with 12 on first roll
+                case SNAKE_EYES: // lose with 2 on first roll
+                case TREY: // lose with 3 on first roll
+                case BOX_CARS: // lose with 12 on first roll
                     gameStatus = Status.LOST;
                     break;
-                default: // did not win or lose, so remember point
+                default: // did not win or lose, so remember point         
                     gameStatus = Status.CONTINUE; // game is not over
-                    myPoint = sumOfDice; // store the point
-                    break;
+                    myPoint = sumOfDice; // remember the point
+                    break; 
             } // end switch
 // while game is not complete ...
             while ( gameStatus == Status.CONTINUE )
@@ -109,6 +114,7 @@ public class GameOfCraps
         System.out.printf("\nThe chances of winning are %d / %d = %.2f%%\n", winSum, totalGames, (100.0 * winSum / totalGames));
         
         System.out.printf("The average game length is %.2f rolls.\n", (( double ) length / totalGames ));
+                //( ( double ) length / totalGames ) );
     } // end method PrintStats
 
 // roll dice, calculate sum and display results
