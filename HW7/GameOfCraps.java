@@ -114,7 +114,6 @@ public class GameOfCraps
         System.out.printf("\nThe chances of winning are %d / %d = %.2f%%\n", winSum, totalGames, (100.0 * winSum / totalGames));
         
         System.out.printf("The average game length is %.2f rolls.\n", (( double ) length / totalGames ));
-                //( ( double ) length / totalGames ) );
     } // end method PrintStats
 
 // roll dice, calculate sum and display results
@@ -122,7 +121,7 @@ public class GameOfCraps
     {
 // pick random die values
         int die1 = 1 + randomNumbers.nextInt( 6 );
-        int die2 = randomNumbers.nextInt( 6 );
+        int die2 = 1 + randomNumbers.nextInt( 6 );
         int sum = die1 + die2; // sum die values
 
         return sum; // return sum of dice
