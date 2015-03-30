@@ -7,3 +7,7 @@
      - The game asks the player for their next move by specifying row and column, and once the player gives those the board is re-printed and then asks the next player for their next move. This continues until one player has won or it is a draw.
 <p> 
      - use a multidimensional array for the game board and keeping track of player moves (row column)
+
+<p>
+References:
+https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html
