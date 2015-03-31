@@ -7,6 +7,6 @@ public class TicTacToeTest
    {
       TicTacToe game = new TicTacToe();
       game.printBoard();
-      game.makeMove();
+      game.play();
    } 
 } // end class TicTacToeTest
