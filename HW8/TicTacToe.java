@@ -27,7 +27,7 @@ public class TicTacToe {
     //Begin enum for empty, player 1 or player 2
     public enum status{ EMPTY, X, O }
     
-    public void Play()
+    public void play()
     {
         Scanner myRowColumn = new Scanner(System.in);
         int row = 0, column = 0;
