@@ -89,7 +89,7 @@ public class TicTacToe {
                 gameOver = true;
                 break;
             case draw:
-                System.out.println("Player " + player + " wins.");
+                System.out.println("Game is a draw.");
                 gameOver = true;
                 break;
             case cont:
