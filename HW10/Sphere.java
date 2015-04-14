@@ -27,13 +27,4 @@ public class Sphere extends ThreeDimensionalShape {
     System.out.println( "(" + super.getX() + ", " + super.getY() + ") " + "radius: " + super.getDimension1() );
   }
   
-  public void setRadius( int radius )
-  {
-    super.setDimension1( radius );
-  }
-  
-  public int getRadius()
-  {
-    return super.getDimension1();
-  }
 }
