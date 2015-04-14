@@ -14,17 +14,12 @@ public class Sphere extends ThreeDimensionalShape {
   
   public int getArea()
   {
-    return (int)( 4 * Math.PI * super.getDimension1() * super.getDimension1() );
+    return (int)( 4 * Math.PI * super.getDimension1() * super.getDimension2() );
   }
   
   public int getVolume()
   {
-    return (int)( ( 4 / 3 ) * Math.PI * super.getDimension1() * super.getDimension1() * super.getDimension1() );
-  }
-  
-  public void print()
-  {
-    System.out.println( "(" + super.getX() + ", " + super.getY() + ") " + "radius: " + super.getDimension1() );
+    return (int)( ( 4 * Math.PI * super.getDimension1() * super.getDimension2() * super.getDimension3() ) / 3 );
   }
   
 }
