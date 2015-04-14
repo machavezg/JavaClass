@@ -14,17 +14,12 @@ public class Cube extends ThreeDimensionalShape {
   
   public int getArea()
   {
-    return (int)( 6 * super.getDimension1() * super.getDimension1() );
+    return (int)( 6 * super.getDimension1() * super.getDimension2() );
   }
   
   public int getVolume()
   {
-    return (int)( super.getDimension1() * super.getDimension1() * super.getDimension1() );
-  }
-  
-  public void print()
-  {
-    System.out.println( "(" + super.getX() + ", " + super.getY() + ") " + "side: " + super.getDimension1() );
+    return (int)( super.getDimension1() * super.getDimension2() * super.getDimension3() );
   }
   
 }
