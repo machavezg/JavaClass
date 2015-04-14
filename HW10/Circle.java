@@ -21,14 +21,5 @@ public class Circle extends TwoDimensionalShape {
   {
     return (int)( Math.PI * super.getDimension1() * super.getDimension1() );
   }
-  
-  public void setRadius( int radius )
-  {
-    super.setDimension1( radius );
-  }
-  
-  public int getRadius()
-  {
-    return super.getDimension1();
-  }
+
 }
