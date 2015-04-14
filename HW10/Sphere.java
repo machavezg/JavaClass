@@ -12,12 +12,12 @@ public class Sphere extends ThreeDimensionalShape {
     return "Sphere";
   }
   
-  public int area()
+  public int getArea()
   {
     return (int)( 4* Math.PI * super.getDimension1() * super.getDimension1() );
   }
   
-  public int volume()
+  public int getVolume()
   {
     return (int)( 4 / 3 * Math.PI * super.getDimension1() * super.getDimension1() * super.getDimension1() );
   }
