@@ -19,7 +19,7 @@ public class Circle extends TwoDimensionalShape {
   
   public int getArea()
   {
-    return (int)( Math.PI * super.getDimension1() * super.getDimension1() );
+    return (int)( Math.PI * super.getDimension1() * super.getDimension2() );
   }
 
 }
