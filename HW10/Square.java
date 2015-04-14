@@ -21,14 +21,5 @@ public class Square extends TwoDimensionalShape {
   {
     return super.getDimension1() * super.getDimension1();
   }
-  
-  public void setSide( int side )
-  {
-    super.setDimension1( side );
-  }
-  
-  public int getSide()
-  {
-    return super.getDimension1();
-  }
+
 }
