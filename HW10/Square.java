@@ -17,7 +17,7 @@ public class Square extends TwoDimensionalShape {
     System.out.println( "(" + super.getX() + ", " + super.getY() + ") " + "side: " + super.getDimension1() );
   }
   
-  public int area()
+  public int getArea()
   {
     return super.getDimension1() * super.getDimension1();
   }
