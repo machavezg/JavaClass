@@ -12,12 +12,12 @@ public class Cube extends ThreeDimensionalShape {
     return "Cube";
   }
   
-  public int area()
+  public int getArea()
   {
     return (int)( 6 * super.getDimension1() * super.getDimension1() );
   }
   
-  public int volume()
+  public int getVolume()
   {
     return (int)( super.getDimension1() * super.getDimension1() * super.getDimension1() );
   }
