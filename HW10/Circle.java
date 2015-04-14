@@ -17,7 +17,7 @@ public class Circle extends TwoDimensionalShape {
     System.out.println( "(" + super.getX() + ", " + super.getY() + ") " + "radius: " + super.getDimension1() );
   }
   
-  public int area()
+  public int getArea()
   {
     return (int)( Math.PI * super.getDimension1() * super.getDimension1() );
   }
